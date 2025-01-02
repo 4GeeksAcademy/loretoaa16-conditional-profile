@@ -39,10 +39,10 @@ function render(variables = {}) {
             <h2>${variables.role ? variables.role : ''}</h2>
             <h3>${variables.city ? variables.city : ''} ${variables.country ? variables.country : ''}</h3>
             <ul class="${variables.socialMediaPosition}">
-              <li><a href="${variables.twitter ? variables.twitter : ''}"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="${variables.github ? variables.github : ''}"><i class="fab fa-github"></i></a></li>
-              <li><a href="${variables.linkedin ? variables.twitter : ''}"><i class="fab fa-linkedin"></i></a></li>
-              <li><a href="${variables.instagram ? variables.instagram : ''}"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="${variables.twitter ? `https://twitter.com/${variables.twitter}` : 'https://twitter.com'}"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="${variables.github ? `https://github.com/${variables.github}` : 'https://github.com'}"><i class="fab fa-github"></i></a></li>
+              <li><a href="${variables.linkedin ? `https://www.linkedin.com/in/${variables.linkedin}` : 'https://www.linkedin.com'}"><i class="fab fa-linkedin"></i></a></li>
+              <li><a href="${variables.instagram ? `https://www.instagram.com/${variables.instagram}` : 'https://www.instagram.com'}"><i class="fab fa-instagram"></i></a></li>
             </ul>
         </div>
     `;
